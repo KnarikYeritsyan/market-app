@@ -1,0 +1,4 @@
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+#non-sortable { list-style-type: none; margin: 0; padding: 0; }
+#sortable li { margin: 3px 3px 3px 0; float: left; width: 200px; height: 200px; font-size: 4em; text-align: center;cursor: move }
+#non-sortable li { margin: 3px 3px 3px 0; float: left; width: 200px; height: 200px; font-size: 4em; text-align: center;}

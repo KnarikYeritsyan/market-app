@@ -1,0 +1,151 @@
+
+
+composer require laravel/ui --dev
+php artisan ui vue --auth
+php artisan make:notification ResetPassword
+
+
+https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/
+
+https://support.cloudways.com/configure-gmail-smtp/
+https://fabiopacifici.com/laravel-5-7-multi-language-complete-guide/
+https://quickadminpanel.com/blog/10-best-laravel-packages-for-multi-language-translations/
+
+e-mail: admin.adminyan@gmail.com
+password: 11111111
+
+
+aws___________
+cd C:\Users\HP\Downloads
+ssh -i "demo.pem" ubuntu@35.158.224.22
+cd /opt/lampp/htdocs/market
+ssh -i "demo.pem" ubuntu@18.153.3.83
+sudo chown -R ubuntu:www-data storage
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
+
+https://www.9lessons.info/2015/12/amazon-ec2-setup-with-ubuntu-and-xampp.html
+https://stackoverflow.com/questions/11999371/access-to-the-requested-object-is-only-available-from-the-local-network-phpmyadm
+https://medium.com/@RahulShukla754/amazon-ec2-setup-with-ubuntu-and-xampp-installation-37c3c0eeb51d
+
+
+wget https://www.apachefriends.org/xampp-files/7.3.15/xampp-linux-x64-7.3.15-0-installer.run
+sudo chmod +x xampp-linux-x64-7.3.15-0-installer.run
+sudo ./xampp-linux-x64-7.3.15-0-installer.run
+vi /opt/lampp/etc/extra/httpd-xampp.conf
+sudo /opt/lampp/lampp restart
+
+composer install --ignore-platform-reqs
+
+cd /opt/lampp/htdocs/market/public/assets/img/brands
+mkdir img
+mkdir img_resize
+sudo chmod -R 777 /opt/lampp/htdocs/market/public/assets/img/brands/
+
+cd /opt/lampp/htdocs/market/public/assets/img/products
+mkdir img
+mkdir img_resize
+sudo chmod -R 777 /opt/lampp/htdocs/market/public/assets/img/products/
+
+db password: DjiRyJU2T(Ksz(7&IL8f
+db password: DjiRyJU2TKsz7IL8f
+
+/opt/lampp/bin/mysql -u root -p "DjiRyJU2T(Ksz(7&IL8f"
+sudo /opt/lampp/lampp restart
+vi /opt/lampp/htdocs/market/.env
+vi /opt/lampp/htdocs/.htaccess
+/opt/lampp/bin/php artisan config:cache
+/opt/lampp/bin/php artisan cache:clear
+/opt/lampp/bin/php artisan config:clear
+
+seed folders___
+cd public/assets & mkdir brands & mkdir categories & mkdir pages & mkdir products & mkdir sliders
+mkdir brands/img_resize & mkdir categories/img_resize & mkdir pages/img_resize & mkdir products/img_resize & mkdir sliders/img_resize
+
+# since XAMPP 1.4.3
+<Directory "/opt/lampp/phpmyadmin">
+AllowOverride AuthConfig Limit
+Order allow,deny
+Allow from all
+Require all granted
+ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
+</Directory>
+
+.htaccess
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/market/public/
+RewriteRule (.*) /market/public/$1
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/market_vuejs/dist/
+RewriteRule (.*) /market_vuejs/dist/$1
+
+.htaccess with port
+RewriteEngine on
+RewriteCond  %{SERVER_PORT} ^80$
+RewriteCond %{REQUEST_URI} !^/market_vuejs/dist/
+RewriteRule (.*) /market_vuejs/dist/$1
+
+RewriteCond  %{SERVER_PORT} ^8080$
+RewriteCond %{REQUEST_URI} !^/market/public/
+RewriteRule (.*) /market/public/$1
+
+RewriteEngine on
+RewriteCond  %{SERVER_PORT} ^80$
+RewriteCond %{REQUEST_URI} !^/market/public/
+RewriteRule (.*) /market/public/$1
+
+RewriteCond  %{SERVER_PORT} ^8080$
+RewriteCond %{REQUEST_URI} !^/market_vuejs/dist/
+RewriteRule (.*) /market_vuejs/dist/
+
+
+scp -i "demo.pem" C:\xampp\htdocs\market\.env ubuntu@3.20.197.59:/opt/lampp/htdocs/market/.env
+scp C:\xampp\htdocs\market\.env ubuntu@3.20.197.59:/opt/lampp/htdocs/market/.env
+
+port 8080
+1) vi /opt/lampp/etc/httpd.conf
+(uncomment the line)
+# Virtual hosts
+Include etc/extra/httpd-vhosts.conf
+(add port)
+#Listen 12.34.56.78:80
+Listen 80
+Listen 8080
+2) vi /opt/lampp/etc/extra/httpd-vhosts.conf
+(add in vhosts file)
+<VirtualHost *:8080>
+ServerAdmin webmaster@dummy-host2.example.com
+DocumentRoot "/opt/lampp/htdocs/market/public"
+ServerName 3.20.197.59:8080
+ErrorLog "logs/dummy-host2.example.com-error_log"
+CustomLog "logs/dummy-host2.example.com-access_log" common
+</VirtualHost>
+3) add in aws security inbound rules
+Custom TCP -port 8080 anywhere
+
+
+
+template_____
+https://adminmart.com/
+
+
+
+vuejs_________
+https://laravel-news.com/building-vue-spa-laravel-part-3
+https://medium.com/@ripoche.b/create-a-spa-with-role-based-authentication-with-laravel-and-vue-js-ac4b260b882f
+https://github.com/cretueusebiu/laravel-vue-spa
+https://laracasts.com/series/laravel-vue-and-spas/episodes/1
+https://github.com/martinlindhe/laravel-vue-i18n-generator
+https://medium.com/@piethein/how-to-combine-vuejs-router-with-laravel-1226acd73ab0
+https://medium.com/@onur.kose/laravel-with-vue-and-environmental-variables-8be093105c69
+https://forum.vuejs.org/t/vue-router-localized-urls-and-dynamic-routes/26867
+auth____
+https://blog.pusher.com/laravel-jwt/
+
+laravel middlware rloes___________
+https://laravel.com/docs/5.8/middleware
+
+
+nestable____
+https://www.npmjs.com/package/nestable2?activeTab=readme

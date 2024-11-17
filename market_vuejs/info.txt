@@ -1,0 +1,20 @@
+title metas_______
+https://alligator.io/vuejs/vue-router-modify-head/
+
+auth_____
+https://pusher.com/tutorials/authentication-vue-vuex
+https://github.com/vuejs/vue-router/issues/311
+
+locale____
+https://www.youtube.com/watch?v=CFGjn3yKMNc
+
+
+cd C:\Users\HP\Downloads
+ssh -i "demo.pem" ubuntu@18.153.3.83
+cd /var/www/html/market_vuejs/
+
+sudo systemctl restart apache2.service
+
+
+cd  cd /var/www/html/market_vuejs/dist/
+vi /var/log/apache2/error.log
